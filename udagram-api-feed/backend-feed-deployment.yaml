@@ -25,3 +25,10 @@ spec:
             name: env-configmap
         - secretRef:
             name: env-secret
+        resources:
+          requests:
+            cpu: "600m"
+            memory: "2048Mi"
+          limits:
+            cpu: "1000m"
+            memory: "3000Mi"
